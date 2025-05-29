@@ -12,7 +12,7 @@ docker compose logs -f
 
 Call the trigger endpoint on the front service (service A)
 ```
-curl -X GET http://localhost:3002/api/trigger
+curl -X GET http://localhost:3002/trigger
 ```
 
 Close all
