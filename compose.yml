@@ -26,10 +26,10 @@ services:
     container_name: service-b
     build: 
       context: ./service-b
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile    
     environment:
-      - NODE_ENV=development
-      - MONGODB_URI=mongodb://root:password@mongo-db:27017/demo-db
+      NODE_ENV: development
+      MONGODB_URI: mongodb://root:password@mongo-db:27017
     depends_on:
       - mongo-db
     volumes:
@@ -38,7 +38,7 @@ services:
     ports:
       - "3001:3000"
     #command: npm install && npm run dev    
-    command: tail -f /dev/null
+    #command: tail -f /dev/null
     networks:
       - system-network
 
@@ -48,7 +48,6 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
-      MONGO_INITDB_DATABASE: demo-db
     networks:
       - system-network
     volumes:

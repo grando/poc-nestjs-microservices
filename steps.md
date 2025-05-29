@@ -14,7 +14,8 @@ npx nest g module demo
 
 npm install class-validator class-transformer
 npm install reflect-metadata
-
+npm install @nestjs/mongoose mongoose
+npm install --save-dev @types/mongoose
 ```
 
 test
