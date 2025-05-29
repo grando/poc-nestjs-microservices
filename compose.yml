@@ -18,7 +18,7 @@ services:
     depends_on:
       - service-b
     #command: npm install && npm run dev    
-    command: tail -f /dev/null
+    #command: tail -f /dev/null
     networks:
       - system-network
 
