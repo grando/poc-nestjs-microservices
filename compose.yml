@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
     environment:
       - NODE_ENV=development
-      - SERVICE_B_URL=http://service-b:3001
+      - SERVICE_B_URL=http://service-b:3000
     volumes:
       - ./service-a:/usr/src/app
       - /usr/src/app/node_modules

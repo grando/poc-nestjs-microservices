@@ -25,3 +25,13 @@ curl -X POST \
      -d '{"message": "username", "email": "user@domain.com"}' \
      http://localhost:3001/demo/create
 ```
+
+
+#service-a
+
+```
+npm i -g @nestjs/cli
+nest new .
+npm install @nestjs/axios
+```
+
